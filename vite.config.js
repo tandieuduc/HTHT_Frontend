@@ -20,9 +20,18 @@ export default defineConfig({
     open: true,
     proxy: {
       '/api': {
-        target: 'http://localhost:8000',
+        target: 'http://localhost:8080',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
+      }
+    }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        // Enable SCSS support and import global styles
+        // This allows you to use SCSS variables and mixins globally
+        additionalData: `@import "@/scss/_styles.scss";`
       }
     }
   },

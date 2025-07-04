@@ -3,3 +3,12 @@
 body {
   font-family: Roboto;
 }
+
+:root {
+  --sidebar-bg-color: #4E9ACD;
+  --sidebar-text-color: #FFFFFF;
+  --selected-border-color: #F1FAFF;
+  --hover-color: #2F6F9E;
+  --icon-color: #FFFFFF;
+  --color-white: #FFFFFF;
+}
